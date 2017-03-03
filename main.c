@@ -162,3 +162,25 @@ int main()
         }
         
     }
+    
+    //call the method to start the game
+    performActions(playerArray, slotsArray, noOfPlayers, noOfSlots);
+    
+}
+
+//method to perform the actions
+void performActions(player playerArray[],slot slotArray[],int noOfPlayers,int noOfSlots)
+{
+    //loop which runs throught the number of players
+    //each player gets one chance
+    for(int a=0;a<noOfPlayers;a++)
+    {
+        //boolean to store if the players turn was successful
+        //if not successful then player does his turn again
+        bool turnSuccessful=false;
+        
+        //Player gets his turn
+        printf("%s : Please do your turn\n",playerArray[a].name);
+        
+        //player inputs his move
+        printf("Enter 1 to attack the closest player\nEnter 2 to move to the previous slot\nEnter 3 to move to the next slot\n");
