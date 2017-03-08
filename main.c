@@ -184,7 +184,7 @@ void performActions(player playerArray[],slot slotArray[],int noOfPlayers,int no
         
         //player inputs his move
         printf("Enter 1 to attack the closest player\nEnter 2 to move to the previous slot\nEnter 3 to move to the next slot\n");
-int moveChoice;
+      int moveChoice;
         scanf("%d",&moveChoice);
         
         //checks if the choice entered was correct
